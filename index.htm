@@ -11,7 +11,10 @@
     <button v-on:click="counter++">Increase</button>
     <button v-on:click="increaseCounter(3,$event)">Increase</button>
     <p>{{counter}}</p>
-    <p v-on:mousemove="updateCoords(2,$event)">coordinates:{{x}},{{y}}</p>
+    <p v-on:mousemove="updateCoords(2,$event)">coordinates:{{x}},{{y}}
+      <span v-on:mousemove.stop>scret area</span>
+    </p>
+            
 
 
   </div>
